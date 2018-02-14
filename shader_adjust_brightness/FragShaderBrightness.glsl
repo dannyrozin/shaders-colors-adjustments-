@@ -3,7 +3,7 @@ precision mediump float;
 precision mediump int;
 #endif
 
-uniform sampler2D texture;                                           // this is the color comnig in
+uniform sampler2D texture;                                           // this is the whole image coming in
 varying vec4 vertTexCoord;
 uniform float param1;
 
