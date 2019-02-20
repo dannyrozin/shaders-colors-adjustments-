@@ -1,4 +1,4 @@
-// The world pixel by pixel 2017
+// The world pixel by pixel 2019
 // Daniel Rozin
 // use fragment shader to adjust brightness of live video
 
