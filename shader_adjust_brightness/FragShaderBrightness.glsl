@@ -1,11 +1,15 @@
+// The world pixel by pixel 2020
+// Daniel Rozin
+// fragment shader to adjust brightness of live video
+
 #ifdef GL_ES
 precision mediump float;
 precision mediump int;
 #endif
 
 uniform sampler2D texture;                                           // this is the whole image coming in
-varying vec4 vertTexCoord;
-uniform float param1;
+varying vec4 vertTexCoord;                                        // this is the coordinates of this fragment (pixel ?)
+uniform float param1;                                               // our parameter passed from processing will land here
 
 
 
@@ -15,5 +19,5 @@ void main() {
 	float newG= clamp(thisPixColor.g+param1,0,1);                   // clamping is not really needed cause the shader does it by default
 	float newB= clamp(thisPixColor.b+param1,0,1);
 
-  	gl_FragColor = vec4(newR,newG,newB,1);                          // make a vec4 with the new R,G,B ,A and set as the output   
+  	gl_FragColor = vec4(newR,newG,newB,1);                          // make a vec4 with the new R,G,B ,A and set as the output
 }

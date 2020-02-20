@@ -1,4 +1,4 @@
-// The world pixel by pixel 2019
+// The world pixel by pixel 2020
 // Daniel Rozin
 // use fragment shader to adjust brightness of live video
 
@@ -22,7 +22,7 @@ void captureEvent(Capture c) {                                      // this is a
 void draw() {
   image(video,0,0);                                                // we have to draw the live video to the window
   float adjustAmount= map (mouseX, 0,width, -1,1);                 // and the shader will transform it 
-  myFragShader.set("param1",adjustAmount);                         // pass paramater to shader
+  myFragShader.set("param1",adjustAmount);                         // pass paramater to shader as float -1 - +1
   shader(myFragShader);                                            // call shader
   println (frameRate);
 }
