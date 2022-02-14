@@ -1,4 +1,4 @@
-// The world pixel by pixel 2020
+// The world pixel by pixel 2022
 // Daniel Rozin
 // use fragment shader to threshold a live video
 

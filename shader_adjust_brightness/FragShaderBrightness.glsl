@@ -1,6 +1,6 @@
-// The world pixel by pixel 2021
+// The world pixel by pixel 2022
 // Daniel Rozin
-// fragment shader to adjust brightness of live video
+// fragment shader to invert live video
 
 #ifdef GL_ES
 precision mediump float;
